@@ -1,4 +1,4 @@
 [submodule "FreeRTOS/Demo/template"]
 	path = FreeRTOS/Demo/template
     url = https://github.com/Trabalhos-PUC-PR/S.op_clean_template.git
-    branch = main
+	branch = main
