@@ -106,10 +106,6 @@ ifdef SANITIZE_LEAK
   LDFLAGS             +=   -fsanitize=leak
 endif
 
-ifeq ($(USER_DEMO),BLINKY_DEMO)
-  CPPFLAGS            +=   -DUSER_DEMO=0
-endif
-
 OBJ_FILES = $(SOURCE_FILES:%.c=$(BUILD_DIR)/%.o)
 
 DEP_FILE = $(OBJ_FILES:%.o=%.d)

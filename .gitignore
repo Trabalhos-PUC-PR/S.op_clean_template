@@ -1,6 +1,7 @@
 .sconsign.dblite
+
 build/
 .cache/
-Trace_Recorder_Configuration/
+
 src/FreeRTOS
 src/FreeRTOS-Plus

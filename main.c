@@ -20,8 +20,6 @@
     #include <trcRecorder.h>
 #endif
 
-#define    BLINKY_DEMO    0
-
 #ifdef BUILD_DIR
     #define BUILD         BUILD_DIR
 #else
@@ -34,8 +32,7 @@
 
 /*-----------------------------------------------------------*/
 
-extern void main_blinky( void );
-extern void main_full( void );
+extern void main_( void );
 static void traceOnEnter( void );
 
 /*
@@ -110,16 +107,8 @@ int main( void )
     #endif /* if ( projENABLE_TRACING == 1 ) */
 
     console_init();
-    #if ( mainSELECTED_APPLICATION == BLINKY_DEMO )
-    {
-        console_print( "Starting echo blinky demo\n" );
-        main_blinky();
-    }
-    #else
-    {
-        #error "The selected demo is not valid"
-    }
-    #endif /* if ( mainSELECTED_APPLICATION ) */
+    console_print( "Calling main_ entrypoint..." );
+    main_();
 
     return 0;
 }
