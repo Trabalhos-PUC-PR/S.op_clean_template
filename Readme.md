@@ -1,5 +1,4 @@
-#### Template minimo para rodar os projetos da matéria de sistemas operacionais
-###### no Linux
+#### Template minimo para rodar os projetos da matéria de sistemas operacionais no Linux
 
 A ideia desse template é ter uma base pronta, facil, que funcione, para desenvolvimento dos projetos de sistemas operacionais
 
