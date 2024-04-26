@@ -1,24 +1,18 @@
-#### Arquivos minimos do FreeRTOS para a matéria de sistemas operacionais
+#### Ambiente minimo para desenvolver os projetos da matéria de sistemas
 
-### Como usar esse repositório?
-
-O seguinte comando vai baixar o mínimo necessario para trabalhar nas atividades da matéria de sistemas operacionais
+Para clonar o ambiente minimo com o template:
 ```bash
 git clone -b freeRTOS --recursive-submodules https://github.com/Trabalhos-PUC-PR/S.op_clean_template.git
 ```
 
-O template do código para as atividades está em `FreeRTOS/Demo/template`
-
-### Como compilar?
-
-```
-make
-```
-
-###### Caso NeoVim esteja sendo usado, recomendo gerar o arquivo `compile_commands.json` pelo pacote `bear` ou `compiledb`
+Para clonar somente o ambiente minimo:
 ```bash
-bear -- make
+git clone -b freeRTOS https://github.com/Trabalhos-PUC-PR/S.op_clean_template.git
 ```
-```bash
-compiledb make
-```
+
+
+#### E agora?
+
+Os arquivos dos projetos devem ficar na pasta `FreeRTOS/Demo/`, qualquer falha, ou falta de algum recurso que foi cortado, abrir uma issue com o log do erro
+
+
