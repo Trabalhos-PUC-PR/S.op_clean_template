@@ -1,4 +1,5 @@
-#### Template minimo para matéria de sistemas operacionais
+#### Template minimo para rodar os projetos da matéria de sistemas operacionais
+###### no Linux
 
 Para clonar com o FreeRTOS incluso:
 ```bash
@@ -10,5 +11,18 @@ Para clonar somente o template:
 git clone https://github.com/Trabalhos-PUC-PR/S.op_clean_template.git
 ```
 
-Lembrando que o template incluso no FreeRTOS aponta para esse repositório!  
-Só fazer um `git init` dentro do template e o repositório será reinicializado
+Caso clonando só o template (dado que você já tenha o FreeRTOS na máquina), colocar o clone do template na pasta `Demo`
+
+### Como compilar?
+
+```
+make
+```
+
+###### Caso NeoVim esteja sendo usado, recomendo gerar o arquivo `compile_commands.json` pelo pacote `bear` ou `compiledb`
+```bash
+bear -- make
+```
+```bash
+compiledb make
+```
