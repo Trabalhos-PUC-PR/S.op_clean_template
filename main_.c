@@ -7,7 +7,7 @@
  2 - A função de uma tarefa deve receber um parâmetro de ponteiro void. 
 */
 void vTask1(void *pvParameters);
-void vTask2(void* pvParameters);
+void vTask2(void *pvParameters);
 
 /*
  Denição da estrutura da função

@@ -15,17 +15,11 @@
 
 #include "basic_io.h"
 
-#if ( projENABLE_TRACING == 1 )
-    #include <trcRecorder.h>
-#endif
-
 #ifdef BUILD_DIR
     #define BUILD         BUILD_DIR
 #else
     #define BUILD         "./"
 #endif
-
-#define     mainSELECTED_APPLICATION    USER_DEMO
 
 /* This demo uses heap_3.c (the libc provided malloc() and free()). */
 
