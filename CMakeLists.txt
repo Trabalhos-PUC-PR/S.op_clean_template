@@ -77,7 +77,6 @@ add_executable( posix_demo
                 console.c
                 main.c
                 main_blinky.c
-                main_full.c
                 run-time-stats-utils.c
                 $<$<NOT:${NO_TRACING}>:${FREERTOS_PLUS_TRACE_SOURCES}>
                 ${CMAKE_CURRENT_LIST_DIR}/../Common/Minimal/AbortDelay.c
@@ -119,7 +118,6 @@ target_include_directories( posix_demo
 target_compile_definitions( posix_demo
     PRIVATE
         $<IF:$<STREQUAL:${USER_DEMO},BLINKY_DEMO>,USER_DEMO=0,>
-        $<IF:$<STREQUAL:${USER_DEMO},FULL_DEMO>,USER_DEMO=1,>
 )
 
 target_link_libraries( posix_demo freertos_kernel freertos_config )

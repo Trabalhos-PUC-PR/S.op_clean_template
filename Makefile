@@ -110,11 +110,6 @@ ifeq ($(USER_DEMO),BLINKY_DEMO)
   CPPFLAGS            +=   -DUSER_DEMO=0
 endif
 
-ifeq ($(USER_DEMO),FULL_DEMO)
-  CPPFLAGS            +=   -DUSER_DEMO=1
-endif
-
-
 OBJ_FILES = $(SOURCE_FILES:%.c=$(BUILD_DIR)/%.o)
 
 DEP_FILE = $(OBJ_FILES:%.o=%.d)
