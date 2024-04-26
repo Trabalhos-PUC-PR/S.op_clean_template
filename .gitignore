@@ -6,6 +6,8 @@ build/
 src/FreeRTOS
 src/FreeRTOS-Plus
 
+compile_commands.json
+
 # Prerequisites
 *.d
 
