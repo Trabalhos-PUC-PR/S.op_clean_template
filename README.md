@@ -4,7 +4,7 @@
 
 O seguinte comando vai baixar o mínimo necessario para trabalhar nas atividades da matéria de sistemas operacionais
 ```bash
-git clone -b freeRTOS https://github.com/Trabalhos-PUC-PR/S.op_clean_template.git
+git clone -b freeRTOS --recursive-submodules https://github.com/Trabalhos-PUC-PR/S.op_clean_template.git
 ```
 
 O template do código para as atividades está em `FreeRTOS/Demo/template`
