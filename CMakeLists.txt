@@ -73,10 +73,8 @@ target_compile_options( freertos_kernel
 file( GLOB FREERTOS_PLUS_TRACE_SOURCES ${FREERTOS_PLUS_TRACE_PATH}/*.c ${FREERTOS_PLUS_TRACE_PATH}/kernelports/FreeRTOS/*.c )
 
 add_executable( posix_demo
-                code_coverage_additions.c
                 main.c
                 main_.c
-                run-time-stats-utils.c
                 $<$<NOT:${NO_TRACING}>:${FREERTOS_PLUS_TRACE_SOURCES}>
                 ${CMAKE_CURRENT_LIST_DIR}/../Common/Minimal/AbortDelay.c
                 ${CMAKE_CURRENT_LIST_DIR}/../Common/Minimal/BlockQ.c
