@@ -13,8 +13,7 @@
 #include "FreeRTOS.h"
 #include "task.h"
 
-/* Local includes. */
-#include "console.h"
+#include "basic_io.h"
 
 #if ( projENABLE_TRACING == 1 )
     #include <trcRecorder.h>
@@ -106,8 +105,7 @@ int main( void )
     }
     #endif /* if ( projENABLE_TRACING == 1 ) */
 
-    console_init();
-    console_print( "Calling main_ entrypoint..." );
+    vPrintString("Calling main_ entrypoint...\n");
     main_();
 
     return 0;

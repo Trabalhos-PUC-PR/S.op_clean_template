@@ -74,7 +74,6 @@ file( GLOB FREERTOS_PLUS_TRACE_SOURCES ${FREERTOS_PLUS_TRACE_PATH}/*.c ${FREERTO
 
 add_executable( posix_demo
                 code_coverage_additions.c
-                console.c
                 main.c
                 main_.c
                 run-time-stats-utils.c

@@ -1,6 +1,6 @@
 #include "FreeRTOS.h"
 #include "task.h"
-#include "console.h"
+#include "basic_io.h"
 
 /*
  1 - O protótipo da função de uma tarefa deve sempre retornar void, ou seja, a tarefa não possui retorno.
@@ -18,7 +18,7 @@ void vTask1(void *pvParameters)
 
 	for (;; )
 	{
-        console_print(msg);
+        vPrintString(msg);
 		vTaskDelay(500);
 	}
 
@@ -31,7 +31,7 @@ void vTask2(void* pvParameters)
 
 	for (;; )
 	{
-        console_print(msg);
+        vPrintString(msg);
 		vTaskDelay(500);
 	}
 
